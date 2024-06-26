@@ -1,0 +1,85 @@
+/* styles.css */  
+.navbar-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 5rem;
+    background-color: blue;
+    
+}
+.navbar-info__item{
+    color: white;
+    font-size: 1.2rem;
+}
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 5rem;
+  }
+  
+  .navbar__logo {
+    font-size: 1.5rem;
+  }
+  
+  .navbar__toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .navbar__menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    text-transform: uppercase;
+
+  }
+  
+  
+  .navbar__menu a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    font-size: 16px;
+  }
+  
+  .navbar__menu li:hover {
+    background-color: #575757;
+    border-radius: 5px;
+  }
+
+  .navbar__carrito {
+    background-color: red;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar__toggle {
+      display: block;
+    }
+    
+    .navbar__menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    .navbar__menu.show {
+      display: flex;
+    }
+    
+    .navbar__menu li {
+      width: 100%;
+      text-align: center;
+      margin: 0;
+    }
+    
+    .navbar__menu a {
+      padding: 1rem;
+    }
+  }
+  

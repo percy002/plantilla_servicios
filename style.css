@@ -1,0 +1,32 @@
+/*
+Theme Name: MYPES Servicios
+Theme URI:
+Author: Gerencia de Produccion - GORE Cusco
+Author URI: https://wordpress.org
+Description: Tema para el sitio web de MYPES Beneficiados en el marco del Proyecto de Digitalizacion de las MYPES de la Región Cusco
+Requires PHP: 7.0
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: mypes_servicios
+Tags: mypes, digitalizacion, servicios, beneficios, GORE Cusco
+*/
+
+/*Estilo globales*/
+:root{
+    --fuente-primaria: 'Inter', sans-serif;
+}
+
+body{
+    font-family: var(--fuente-primaria);
+}
+li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
