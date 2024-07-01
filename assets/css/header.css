@@ -46,14 +46,13 @@
     display: block;
     font-size: 20px;
   }
-  
-  .navbar__menu li:hover {
-    background-color: #575757;
-    border-radius: 5px;
+  .navbar__menu a:hover{
+    color: white;
   }
+  
+  
 
-  .navbar__carrito {
-    background-color: red;
+  .navbar__carrito {    
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
