@@ -8,7 +8,16 @@
 
         $logo = get_field('logo', $front_page_id);
         $logo_blanco = get_field('logo_blanco', $front_page_id);
+
+        $datosContacto = get_field('datos_contacto', $front_page_id);
+
+        $direccion = $datosContacto['direccion'];
+        $correo_electronico = $datosContacto['correo_electronico'];
+        $celular = $datosContacto['celular'];
 ?>
+<a href="https://wa.me/+51950313771" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
 <footer>
     <!-- footer de la empresa -->
     <section>
@@ -20,9 +29,9 @@
                 <div class="">
                     <h4>Sobre Nosotros</h4>
                     <ul>
-                        <li><a href="">vidriosplanos@gmail.com</a></li>
-                        <li><a href="">avenida</a></li>
-                        <li><a href="">+51 585695844</a></li>
+                        <li><?php echo $correo_electronico ?></li>
+                        <li><?php echo $direccion ?></li>
+                        <li><?php echo $celular ?></li>
                     </ul>
                 </div>
             </div>
@@ -48,10 +57,11 @@
                 <img src="<?php echo get_template_directory_uri().'/assets/img/logos/logo_mypes.png'?>" alt="logo proyecto mypes">
                 <img src="<?php echo get_template_directory_uri().'/assets/img/logos/logo_gerepro.png'?>" alt="logo GEREPRO">
             </div>
-            <div class="">
-                <h4>Hagamos Historia</h4>
+            <div class="footer-gob__slogan">
+                <img src="<?php echo get_template_directory_uri().'/assets/img/logos/hagamos_historia_blanco.png'?>" alt="logo GEREPRO">
+
             </div>
-            <div class="">
+            <div class="footer-gob__copy">
                 © 2024 MYPEs Digitales - Todos los Derechos Reservados.
             </div>
         </div>

@@ -1,0 +1,56 @@
+.nosotros__encabezado{
+    background-image: url(../img/bg_piedra.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nosotros__encabezado h1{
+    text-align: center;
+}
+.nosotros__encabezado p{
+    text-align: justify;
+    font-size: 24px;
+}
+
+/* historia */
+.nosotros{
+    padding: 50px;
+}
+.nosotros__historia{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+   }
+.nosotros__historia__logo{
+    display: flex;
+    justify-content: center;
+
+}
+.nosotros__historia__logo img{
+    width: 575px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.nosotros__historia h2{
+    text-align: center;
+}
+
+.nosotros__declaracion{
+    padding: 0 20px;
+    display: flex;
+    gap: 50px;
+}
+@media (max-width: 992px){
+    .nosotros__declaracion{
+        flex-direction: column;
+    }
+}
+.nosotros__declaracion > div{
+    flex: 1 0 0;
+}

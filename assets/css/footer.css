@@ -4,6 +4,12 @@
     color: white;
     padding: 50px;
 }
+@media (max-width: 768px){
+    .footer_empresa{
+        flex-direction: column;    
+        gap: 30px;    
+    }
+}
 .footer_empresa > div{
     flex-grow: 1;
     flex-basis: 0;
@@ -32,4 +38,50 @@
     align-items: center;
     color: white;
     padding: 30px 0;
+    gap: 25px;
+}
+
+.footer-gob__logos{
+    display: flex;
+    gap: 30px;
+}
+
+@media (max-width: 768px){
+    .footer-gob__logos{
+        flex-direction: column;    
+    }
+}
+.footer-gob__slogan img{
+    height: 30px;
+    width: auto;
+}
+.footer-gob__copy{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+}
+
+.whatsapp-float i {
+    margin-top: 15px;
+}
+
+/* Añadir efecto hover */
+.whatsapp-float:hover {
+    background-color: #20b358;
+    color: #fff;
 }

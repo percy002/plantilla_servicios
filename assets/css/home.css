@@ -1,9 +1,15 @@
 .historia{
     display: flex;
+    flex-direction: row;
     gap: 50px;
     padding: 50px;
     align-items: center;
 
+}
+@media (max-width: 768px){
+    .historia{
+        flex-direction: column-reverse;        
+    }
 }
 .historia div{
     flex-grow: 1;
@@ -13,4 +19,62 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+.historia__contenido h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.servicio{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 40px;
+    background-color: rgba(164, 164, 164, 0.8);
+}
+@media (max-width: 992px){
+    .servicio{
+        flex-direction: column;        
+    }
+}
+.servicio__card{
+    background-color: white;
+    border-radius: 20px;
+}
+.servicio > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+.servicio__card{
+    padding-bottom: 20px;
+}
+.servicio__card__descripcion{
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+
+}
+.servicio__card__button{
+    display: flex;
+    justify-content: center;
+}
+.servicio__card__button button{
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: 24px;
+}
+.servicio__card img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }

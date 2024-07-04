@@ -1,0 +1,33 @@
+.pagina-encabezado{
+    background-image: url(../img/bg_piedra.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pagina-encabezado h1{
+    text-align: center;
+}
+.pagina-encabezado p{
+    text-align: justify;
+    font-size: 24px;
+}
+
+.separador{
+    width: 100%;
+    border-bottom: 3px solid #D9D9D9;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/* botones */
+.buWhatsapp{
+    color: white;
+    background-color: #25D366;
+}
+
+.buCancelar{
+    color: red;
+    border: 0 solid;
+}

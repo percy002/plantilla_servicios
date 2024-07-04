@@ -1,19 +1,39 @@
 /* styles.css */  
+
 .navbar-info{
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 5rem;    
 }
+@media (max-width: 767px) {
+  .navbar-info {
+      display: none;
+  }
+}
 .navbar-info__item{
     color: white;
     font-size: 16px;
+}
+.navbar-info__item{
+    display: flex;
+    gap: 8px;
 }
   .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10rem;
-    padding: 20px 0;
+    /* padding: 20px 0; */
+    background-color: white;
+  }
+  .navbar__contenido{
+    padding: 0 50px;
+  }
+
+  @media (max-width: 992px){
+    .navbar__contenido{
+      padding: 0 1rem;
+    }
   }
   
   .navbar__logo {
@@ -36,6 +56,7 @@
     display: flex;
     gap: 1rem;
     text-transform: uppercase;
+    font-weight: 700;
 
   }
   
@@ -52,13 +73,38 @@
   
   
 
-  .navbar__carrito {    
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
+.navbar__carrito {    
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.navbar__carrito:hover{
+  color: white;
+}
+
+.navbar__carrito button{
+  text-wrap: nowrap;
+}
+
+.navbar__carrito-mobile{
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: none;
+}
+
+@media (max-width: 992px){
+  .navbar__carrito{
+    display: none;    
   }
-  
-  @media (max-width: 768px) {
+}
+@media (max-width: 992px){
+  .navbar__carrito-mobile{
+    display: block;    
+  }
+}
+  /* @media (max-width: 768px) {
     .navbar__toggle {
       display: block;
     }
@@ -82,5 +128,44 @@
     .navbar__menu a {
       padding: 1rem;
     }
+  } */
+  .navbar-nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+
   }
+  @media (max-width: 767px) {
+    .navbar-nav {
+        align-items: center;
+    }
+  }
+  .menu-item a{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+  }
+  .menu-item a:hover{
+    color: white;
+    border-radius: 20px;
+  }
+
+  .navbar-collapse{
+    justify-content: center;
+  }
+.servicios-seleccionados{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+}
+.servicios-seleccionados > *{
+  display: flex;
+  justify-content: center;
+  flex: 1 0 0;
+  text-align: center;
+}
+            
   
